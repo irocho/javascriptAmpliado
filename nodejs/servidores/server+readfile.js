@@ -13,5 +13,5 @@ http.createServer(function (req, res) {
 }).listen(8080);
 
 console.log('servidor rulando en localhost:8080')
-// executar node 4_demo_readfile.js
+// executar node server+readfile.js
 // visitar localhost:8080

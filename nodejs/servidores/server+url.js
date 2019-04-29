@@ -67,7 +67,7 @@ server.on('request',function(req,res){
 
 server.listen(8124);
 console.log('escoitando en http://localhost:8124')
-//executar con node server.js
+//executar con node server+url.js
 // navegador con localhost:8124
 // navegador con localhost:8124/osinfo
 // navegador con localhost:8124/calqueraCarallada

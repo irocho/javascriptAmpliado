@@ -10,7 +10,7 @@ http.createServer(function (req, res) {
 }).listen(8080);
 
 console.log('servidor rulando en localhost:8080')
-// executar node 1_demo_http_url.js
+// executar eco+url.js
 // visitar localhost:8080/boas
 // visitar localhost:8080/malas
 //

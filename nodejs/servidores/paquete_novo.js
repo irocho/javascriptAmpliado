@@ -17,9 +17,5 @@ http.createServer(function (req, res) {
 }).listen(8080);
 
 
-//executar node 2_demo_paquete_novo.js
-//visitar localhost:8080
-//
-//
-////executar node 2_demo_paquete_novo.js
+//executar node paquete_novo.js
 //visitar localhost:8080

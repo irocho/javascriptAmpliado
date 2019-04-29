@@ -14,5 +14,5 @@ http.createServer(function (req, res) {
 
 
 console.log('servidor rulando en localhost:8080')
-// node 3_demo_querystring.js
+// node querystring.js
 // visitar http://localhost:8080/?ano=2017&mes=xullo
