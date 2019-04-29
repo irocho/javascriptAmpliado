@@ -14,10 +14,8 @@ http.createServer(function(request, response) {
 
 
 
-// executamos no terminal
-//
+// executamos no terminal:
 // node servidor_simple.js
 //
-// visitamos no navegador
-//
+// visitamos no navegador:
 // http://localhost:8888
