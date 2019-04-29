@@ -1,5 +1,5 @@
-// módulo cutrillo ó que vai chamar  2_demo_module.js
+// módulo cutrillo ó que vai chamar  modulito+server.js
 //
- exports.myDateTime = function () {
+ exports.agora = function () {
        return Date();
  };

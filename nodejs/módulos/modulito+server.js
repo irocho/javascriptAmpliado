@@ -5,7 +5,7 @@ var dt = require('./modulito');
 
 http.createServer(function (req, res) {
       res.writeHead(200, {'Content-Type': 'text/html'});
-      res.write("Agora mesmo: " + dt.myDateTime());
+      res.write("Agora mesmo: " + dt.agora());
   res.end();
 }).listen(8080); 
 
