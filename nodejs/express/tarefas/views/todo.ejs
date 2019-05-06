@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cousas pendentes</title>
+<style>
+    a {text-decoration: none; color: black;}
+</style>
+</head>
+
+
+<body>
+<h1>Tarefas pendentes</h1>
+
+<ul>
+<% todolist.forEach(function(todo, index) { %>
+        <li><a href="/todo/delete/<%= index %>">✘</a> <%= todo %></li>
+        <% }); %>
+</ul>
+
+<form action="/todo/add/" method="post">
+    <p>
+        <label for="newtodo">Teño que facer...</label>
+        <input type="text" name="newtodo" id="newtodo" autofocus />
+        <input type="submit" />
+    </p>
+
+</form>
+
+</body>
+</html>
