@@ -8,10 +8,9 @@
     <body>
         <h1> Sitio web estático</h1>
         <p> obtido de https://www.tutorialsteacher.com/nodejs/serving-static-files-in-nodejs </p>
-        <form action="/submit-student-data" method="post">
-            Conta o teu secretito: <input name="firstName" type="text" /> <br />
-            Autor/a: <input name="lastName" type="text" /> <br />
-            <input type="submit" />
-        </form>
+        <h2> Este index está dentro da carpeta web/ cun router axeitado:</h2>
+ <code>
+            app.use(express.static('web')); //as páxinas van estar na carpeta web/
+        </code>
     </body>
 </html>

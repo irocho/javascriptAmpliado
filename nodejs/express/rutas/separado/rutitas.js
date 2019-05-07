@@ -16,6 +16,7 @@ app.post('/submit-student-data', function (req, res) {
         res.send(name + ' Submitted Successfully!');
 });
 
+app.use('/fotos', express.static(__dirname + '/fotos'));
 //app.get('/', function (req, res) {
   //      res.send('<html><body><h1>Hello World</h1></body></html>');
 //});
