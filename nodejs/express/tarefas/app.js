@@ -50,3 +50,4 @@ app.use(session({secret: 'todotopsecret'}))
     })
 
     .listen(8080);
+console.log('ir a localhost:8080')
