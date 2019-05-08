@@ -17,8 +17,6 @@ ex.use(function (req, res, next) {
       res.status(404).send("Vaia, vai ser que non  teño tal")
 })
 
-
-
 ex.listen(3000, function(){
-    console.log('Aplicación no porto 3000');
+    console.log('visitar localhost:3000/asdf');
 });
