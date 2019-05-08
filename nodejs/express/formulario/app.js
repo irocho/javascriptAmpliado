@@ -11,15 +11,12 @@ app.get('/', function (req, res) {
         res.sendFile('index.html', {root: __dirname});
 });
 
-app.post('/submit-student-data', function (req, res) {
+app.post('/enviar', function (req, res) {
         var name = req.body.firstName + ' ' + req.body.lastName;
-        res.send(name + ' Submitted Successfully!');
+        res.send(name + ' saúdos dende o  .js!');
 });
 
-app.use('/fotos', express.static(__dirname + '/fotos'));
-//app.get('/', function (req, res) {
-  //      res.send('<html><body><h1>Hello World</h1></body></html>');
-//});
+//app.use('/fotos', express.static(__dirname + '/fotos'));
 
 //app.post('/submit-data', function (req, res) {
 //        res.send('POST Request');
