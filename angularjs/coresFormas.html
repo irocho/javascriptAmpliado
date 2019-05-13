@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="app" ng-controller="controlador">
+            <div>
+                Favorite word: <input type="text" ng-model="favoriteWord" />
+                {{favoriteWord}}
+            </div>
+            <div>
+                Favorite color:
+                <input type="radio" name="fc" value="Red" ng-model = "favoriteColor">Red</input>
+                <input type="radio" name="fc" value="Green"ng-model="favoriteColor">Green</input>
+                <input type="radio" name="fc" value="Yellow" ng-model= "favoriteColor">Yellow</input>
+                <input type="radio" name="fc" value="Blue" ng-model="favoriteColor">Blue</input>
+                <p> Cor favorita:{{favoriteColor}}</p>
+
+            </div>
+            <div>
+                Favorite shape:
+                <select ng-model="favoriteShape">
+                    <option value="Circle">Circle</option>
+                    <option value="Triangle">Triangle</option>
+                    <option value="Square">Square</option>
+                </select>
+                <p>A forma favorita:  {{favoriteShape}}</p>
+            </div>
+        </div>
+        <script>
+            angular.module('app', [])
+            .controller('controlador', ['$scope', function($scope) {
+            $scope.favoriteWord;
+            $scope.favoriteColor;
+            $scope.favoriteShape;
+            }]);
+        </script>
+    </body>
+</html>
