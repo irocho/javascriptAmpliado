@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <div ng-app="myApp" ng-controller="calculadoraCtrl">
+            <p>
+            Valor: <input type="number" ng-model="x1">
+            </p>
+            <p>
+            Valor: <input type="number" ng-model="x2">
+            </p>
+            Suma: {{total()}}
+        </div>
+
+        <script src="calculadora.js"> </script>
+
+    </body>
+</html>
