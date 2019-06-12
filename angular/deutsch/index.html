@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    </head>
+
+    <body>
+        <div ng-app="app" ng-controller="controlador">
+            <div>
+
+                <input type="radio" name="fc" value="Entzündung" ng-model = "traductor">Infección</input>
+                <input type="radio" name="fc" value="Leistung"ng-model="traductor">Resultado</input>
+                <input type="radio" name="fc" value= "Nachfrage" ng-model= "traductor">Demanda</input>
+                <input type="radio" name="fc" value="Wunderheile" ng-model="traductor">Curandeiro</input>
+                <p>en alemán:  {{traductor}}</p>
+            </div>
+        </div>
+        <script>
+angular.module('app', [])
+.controller('controlador', ['$scope', function($scope) {
+    $scope.traductor;
+}]);
+        </script>
+    </body>
+</html>
